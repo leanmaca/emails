@@ -52,7 +52,6 @@ function App() {
     } else {
       setCheckedList(checkedList.filter((e) => e !== value));
     }
-
   };
 
   const handleDelete = (e) => {

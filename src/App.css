@@ -1,8 +1,6 @@
 .Container{
   background-color: rgb(255, 255, 255);
   font-family: 'Poppins';
-  
-
 }
 
 .Header{
@@ -16,8 +14,6 @@
   padding-inline: 5px;
   /* margin-bottom: 20px; */
 }
-
-
 
 .Header-Left{
   display: flex;
@@ -92,7 +88,6 @@
   color: rgba(0, 0, 0, 0.438);
 }
 
-
 .List{
   background-color: rgb(255, 255, 255);
   /* padding: 2px; */
@@ -119,16 +114,13 @@
   cursor: pointer;
 }
 
-
-
-
 .Item-Left{
   display: flex;
   align-items: center;
 }
 
 .ListHeader:hover{
-  background-color: rgb(216, 216, 216);
+  box-shadow: 1px 1px 1px 1px rgba(82, 82, 82, 0.342)
 }
 
 .ListItem input{
@@ -227,7 +219,6 @@
   visibility: visible;
 }
 
-
 .Tags{
   padding-inline: 3px;
   padding-block: 2px;
@@ -243,7 +234,6 @@
   font-size: 7px;
   font-weight: bold;
 }
-
 
 .Time{
   padding-inline:3px;
@@ -305,4 +295,3 @@
   font-size: 7px;
   font-weight: bold;
 }
-
