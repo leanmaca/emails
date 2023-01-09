@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import {
-  AiOutlineSave,
+  AiFillSave,
   AiOutlineFilter,
   AiOutlineRight,
   AiOutlineDown,
@@ -114,7 +114,7 @@ function App() {
             }}
           ></input>
           <button className="SaveButton">
-            SAVE <AiOutlineSave />
+            SAVE <AiFillSave />
           </button>
           <button className="FiltersButton">
             MANAGE FILTERS <AiOutlineFilter />
