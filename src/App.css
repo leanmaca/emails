@@ -37,7 +37,7 @@
   border-style: solid solid solid solid;
   border-radius: 5px;
   font-size: xx-small;
-  font-weight: 600;
+  font-weight: 500;
   font-style: normal;
   margin-inline: 5px;
   padding-inline: 5px;
@@ -179,7 +179,7 @@
 }
 
 .Sender{
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .SenderInformation{
@@ -272,8 +272,19 @@
   padding-block: 15px;
 }
 
+.DateContent{
+  font-size: smaller;
+  color: rgba(0, 0, 0, 0.753)
+}
+
 .SenderContent{
+  font-size: smaller;
   font-weight: 800;
+}
+
+.ContentText{
+  font-size: smaller;
+  color: rgba(0, 0, 0, 0.753);
 }
 
 .ContentTagsList{

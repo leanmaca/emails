@@ -240,10 +240,10 @@ function App() {
               <div className="EmailContent">
                 <div className="MainContent">
                   <div className="SenderContent">{item.sender.name}</div>
-                  <div className="">{item.sender.emailaddress}</div>
+
                   <div className="DateContent">{item.date}</div>
                   <br></br>
-                  {item.content}
+                  <div className="ContentText">{item.content}</div>
                 </div>
                 <div className="ContentTagsList">
                   {item.tags.map((i) => (
