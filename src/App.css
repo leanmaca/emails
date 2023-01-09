@@ -1,38 +1,308 @@
-.App {
+.Container{
+  background-color: rgb(255, 255, 255);
+  font-family: 'Poppins';
+  
+
+}
+
+.Header{
+  /* background-color: rgb(230, 230, 230); */
+  border-style: none none solid none;
+  border-width: 1px;
+  border-color:rgb(197, 197, 197);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 5px;
+  /* margin-bottom: 20px; */
+}
+
+
+
+.Header-Left{
+  display: flex;
+  align-items: center;
+}
+
+.Header-Right{
+  display: flex;
+  align-items: center;
+}
+
+.Previous{
+  cursor: pointer;
+}
+
+.Next{
+  cursor: pointer;
+}
+
+.Header button, input{
+  border-style: solid solid solid solid;
+  border-radius: 5px;
+  font-size: xx-small;
+  font-weight: 600;
+  font-style: normal;
+  margin-inline: 5px;
+  padding-inline: 5px;
+  padding-block: 2px;
+  cursor: pointer;
+}
+
+.SaveButton{
+  border-color: rgba(105,177,121,255);
+  background-color: rgba(237,248,245,255);
+  color: rgba(105,177,121,255);
+}
+
+.SaveButton:hover{
+  border-color: rgba(105,177,121,255);
+  background-color: rgba(105,177,121,255);
+  color: rgba(237,248,245,255);
+}
+
+.FiltersButton{
+  border-color: rgb(182, 182, 182);
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.FiltersButton:hover{
+  border-color: rgb(182, 182, 182);
+  background-color: rgb(182, 182, 182);
+  color: rgb(255, 255, 255);
+}
+
+.DeleteButton{
+  border-color: rgba(222,70,61,255);
+  background-color: rgba(252,241,240,255);
+  color: rgba(222,70,61,255);
+}
+
+.DeleteButton:hover{
+  border-color: rgba(222,70,61,255);
+  background-color: rgba(222,70,61,255);
+  color: rgba(252,241,240,255);
+}
+
+.Unread{
+  padding: 15px;
+  font-size: xx-small;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.438);
+}
+
+
+.List{
+  background-color: rgb(255, 255, 255);
+  /* padding: 2px; */
+}
+
+.ListItem{
+  margin: 10px;
+  margin-top: 0;
+  background-color: white;
+  align-items: center;
+  border-radius: 10px;
+  padding: 0px;
+  border-style: solid;
+  border-width: 1px;
+  border-color:rgba(196, 196, 196, 0.658);
+}
+
+.ListHeader {
+  padding: 5px;
+  padding-block: 8px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+
+
+
+.Item-Left{
+  display: flex;
+  align-items: center;
+}
+
+.ListHeader:hover{
+  background-color: rgb(216, 216, 216);
+}
+
+.ListItem input{
+  margin-right: 10px;
+}
+
+.Dots{
+  margin-bottom: -3.5px;
+}
+
+.Circle{
+  margin-right: 10px;
+}
+
+.Datebox{
+  background-color: rgb(245, 245, 245);
+  border-color: rgba(0, 0, 0, 0.185);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  margin-right: 10px;
+  padding-inline: 12px;
+  padding-block: 2px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Datebox-Day{
+  justify-self: center;
+  font-weight: 700;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Datebox-Month{
+  font-size: xx-small;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Initials{
+  background-color: rgb(145, 145, 145);
+  border-radius: 50%;
+  margin-right: 10px;
+  padding: 4px;
+  display:flex;
+  color:rgb(255, 255, 255);
+}
+
+.Subject{
+  font-weight: 600;
+  font-stretch:extra-expanded ;
+}
+
+.SenderInformation{
+  display:flex;
+}
+
+.Sender{
+  font-weight: 500;
+}
+
+.SenderInformation{
+  font-size: x-small;
+}
+
+.EmailAddress{
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.Date{
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.Item-Right{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-inline: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.Space{
+  flex-grow: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.Tags-Bottom{
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-end;
 }
+
+.TagsList{
+  visibility: hidden;
+}
+
+.TagsList.show{
+  visibility: visible;
+}
+
+
+.Tags{
+  padding-inline: 3px;
+  padding-block: 2px;
+  background-color: rgba(243,249,251,255);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  border-color: rgba(90,163,193,255);
+  height: 10%;
+  margin-inline: 2px;
+  margin-block: 1px;
+  color: rgba(90,163,193,255);
+  font-size: 7px;
+  font-weight: bold;
+}
+
+
+.Time{
+  padding-inline:3px;
+  align-content: center;
+  background-color: rgba(255, 210, 63, 0.116);
+
+  border-width: 1px;
+  border-radius: 5px;
+ 
+  margin: 5px;
+  color: rgb(228, 194, 85);
+  font-size: 7px;
+  font-weight: bold;
+}
+
+.Content{
+  overflow: hidden;
+  max-height: 0;
+}
+
+.Content.show{
+ 
+  overflow: hidden;
+  max-height: 100%;
+
+}
+
+.EmailContent{
+  display: flex;
+  justify-content: space-between;
+  border-style: dotted none none none;
+  border-width: 2px;
+  border-color:rgba(0, 0, 0, 0.158);
+  font-size: small;
+  padding: 15px;
+  padding-block: 15px;
+}
+
+.SenderContent{
+  font-weight: 800;
+}
+
+.ContentTagsList{
+  display: flex;
+}
+
+.ContentTag{
+  padding-inline: 3px;
+  padding-block: 2px;
+  background-color: rgba(243,249,251,255);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  border-color: rgba(90,163,193,255);
+  height: 10%;
+  margin-inline: 2px;
+  margin-block: 2px;
+  color: rgba(90,163,193,255);
+  font-size: 7px;
+  font-weight: bold;
+}
+
