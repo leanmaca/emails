@@ -20,10 +20,6 @@ function App() {
   const [data, setData] = useState(emails);
   const [startNumber, setStartNumber] = useState(0);
   const [displayNumber, setDisplayNumber] = useState(50);
-  /* useEffect(() => {
-    setData(emails);
-    console.log(emails);
-  }, [data]); */
 
   const ref = useRef([]);
 
@@ -46,19 +42,17 @@ function App() {
     } else {
       setExpand(i);
     }
-    console.log(expand);
   };
 
   const handleCheck = (e) => {
     const { value, checked } = e.target;
-    //console.log(checked);
 
     if (checked) {
       setCheckedList([...checkedList, value]);
     } else {
       setCheckedList(checkedList.filter((e) => e !== value));
     }
-    console.log(checkedList);
+
   };
 
   const handleDelete = (e) => {
@@ -69,25 +63,10 @@ function App() {
       for (let i = 0; i < data.length; i++) {
         console.log("counter at " + i);
         for (let j = 0; j < checkedList.length; j++) {
-          //console.log("counter 2 at " + i);
-          /* if (i == checkedList[j]) {
-            console.log("index " + i + " deleted from data");
-            checkedList.splice(i, 1);
-            console.log("new items to delete: " + checkedList);
-          } else {
-            newEmails.push(data[i]);
-            //console.log("pushed " + i);
-          } */
           if (data[i].emailID == checkedList[j]) {
-            console.log("true");
-
             data.splice(i, 1);
-            //checkedList.splice(i, 1);
-            console.log(checkedList);
           }
         }
-
-        //console.log("finished 1 iteration");
       }
     }
     setData([...data]);
